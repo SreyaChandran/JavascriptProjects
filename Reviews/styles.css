@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+}
+nav{
+    background: #cad9de;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-centeer
+{
+    width: 90vw;
+    max-width: 620px; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-centeer h2{
+    margin: auto;
+    margin-top: 20px;
+    color: skyblue;
+}
+main{
+    
+    display: grid;
+    place-items: center;
+    min-height:calc(100vh - 89px);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.container
+{
+    text-align: center;
+}
+.container h2{
+    color: rgb(101, 90, 119);
+}
+.underline {
+    height: 0.25rem;
+    width: 2rem;
+    background:rgb(101, 90, 119);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .review {
+    background: rgb(212, 200, 231);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    width: 350px;
+  }
+  .img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  #person-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  #author {
+    margin-bottom: 0.25rem;
+  }
+  #job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: var(--clr-primary-5);
+    font-size: 0.85rem;
+  }
+  #info {
+    margin-bottom: 0.75rem;
+  }
+  #prev-btn,
+  #next-btn,
+  #random-btn {
+    color: #02526d;
+    font-size: 1rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  #prev-btn:hover,
+  #next-btn:hover,
+  #random-btn:hover {
+    color: #31beec;
+  }
+.btn-main{
+    background: transparent;
+    color: #222;
+    display: inline-block;
+    border: 2px solid #222;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+
+}
+.btn-main:hover{
+    color: #fff;
+    background: #222;
+}
