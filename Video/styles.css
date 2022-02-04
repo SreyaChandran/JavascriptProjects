@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+}
+body{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: scroll;
+}
+.section{
+    padding:10px;
+}
+.video{
+    padding: 0 10px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.title h2{
+    font-size: 35px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: rgb(30, 78, 210);
+}
+.title .underline
+{
+    height: 4px;
+    width: 100px;
+    background: #9aa6ec;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-center {
+    width: 90vw;
+    margin: 40px auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 20px 20px;
+    justify-items: center;
+    
+  }
+  .switch-btn {
+    position: relative;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    transition: all 0.3s linear;
+  }
+  .switch-btn span {
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #645985;
+  }
+  .switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #d0c4f5;
+    border-radius: 2px;
+    margin: 0;
+    display: block;
+    transition: all 0.3s linear;
+    }
+  .slide .switch {
+    left: 50%;
+  }  
