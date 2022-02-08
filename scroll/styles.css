@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(238, 237, 237);
+}
+header
+{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all 0.3ms ease-in-out;
+    padding: 8px;
+}
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-left: 2px;
+    color: rgb(128, 14, 194);
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inner
+{
+    width: 60%;
+    margin: 0 auto;
+    
+}
+.inner nav ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+.inner nav ul li{
+    padding: 10px;
+    margin-left: 20px;
+}
+.inner nav ul a.scroll-link{
+    padding: 10px 10px;
+    color: blueviolet;
+}
+.inner nav ul a:hover{
+    background-color: blueviolet;
+    color: #fff;
+}
+.inner nav ul a.active{
+    font-weight: bold;
+    position: relative;
+}
+.scroll-down header{
+    transform: translate3d(0, -100%, 0);
+}
+.scroll-up header{
+    filter: drop-shadow(0, -10px, 40px, rgb(170,170,170));
+}
+.nav-icon{
+    display: none;  
+  }
+.nav-icon div{
+    width: 20px;
+    height: 3px;
+    background-color: blueviolet;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+@media  screen and (max-width : 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        top:8vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-icon{
+        display: block;
+    }
+    
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/*section*/
+.title h2 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .title span{
+      color :rgb(128, 14, 194)
+  }
+#home,
+#about,
+#services,
+#projects {
+  height: 80vh;
+}
+#home
+{
+    background: rgb(229, 236, 167);
+}
+#about
+{
+    background: rgb(235, 149, 149);
+}
+#services{
+    background: rgb(165, 229, 197);
+}
+#projects{
+    background: rgb(243, 171, 211);
+}
+footer{
+    color: #fff;
+    background: rgb(49, 48, 48);
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+}
+.top-link {
+    font-size: 10px;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    background: rgb(67, 240, 153);;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    color: #fff;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+  }
+  .show-link {
+    visibility: visible;
+    z-index: 100;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
